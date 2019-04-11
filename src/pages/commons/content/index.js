@@ -1,6 +1,7 @@
 import React from 'react'
 import './index.less'
 import {Link} from "react-router-dom";
+import { Button } from 'antd-mobile';
 
 class Content extends React.Component {
     state = {
@@ -56,12 +57,12 @@ class Content extends React.Component {
                                                index == '1' ?
                                                    (
                                                        <Link to='/counter'>
-                                                           <button className="button-color" type="info">测试11</button>
+                                                        <Button  className="button-color" type="primary" size="small" inline>测试11</Button>
                                                        </Link>
                                                    ):
                                                    (
                                                        <Link to='/clockRecord'>
-                                                           <button className="button-color" type="info">测试</button>
+                                                           <Button className="button-color" type="primary" size="small" inline>测试</Button>
                                                        </Link>
                                                    )
                                            }

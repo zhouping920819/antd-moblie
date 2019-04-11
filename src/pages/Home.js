@@ -5,8 +5,10 @@ import {
     Header,
     Swiper,
     Grider,
-    Content
+    Content,
+    Footer
 } from 'commons'
+//import { Footer } from './commons';
 class Home extends React.Component {
   render() {
     return (
@@ -14,7 +16,8 @@ class Home extends React.Component {
         <Header header={<FormattedMessage id="app.home.title" />} showBack showMore />
         <Swiper/>
         <Grider/>
-          <Content/>
+        <Content/>
+        <Footer/>
       </div>
     )
   }
