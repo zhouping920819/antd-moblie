@@ -1,0 +1,89 @@
+.main-comtent {
+ /* border-top: 5px  solid #F8F8F8;*/
+  background: #fff;
+}
+.itemsList {
+  background-color: #F5F5F5;
+  padding-bottom: 68px;
+  .padding8 {
+    padding-top: 8px;
+    .itemContain {
+
+      background-color: white;
+      display: flex;
+      .itemLeft {
+        width: 51%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        .productName {
+          padding: 10px 0;
+          font-size: 18px;
+          color: #FF4500;
+          @media (min-width: 375px) {
+            font-size: 18px;
+          }
+          @media (min-width: 320px) {
+            font-size: 16px;
+          }
+        }
+
+        .remark {
+          color: #B2B7BE;
+          white-space: pre;
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+
+      .itemMiddle {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 13px;
+
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 1px;
+          height: 60px;
+          border-left: 1px solid #EEEEEE;
+        }
+
+        .remark2 {
+          white-space: pre;
+          font-size: 12px;
+          text-align: center;
+          line-height: 25px;
+
+        }
+      }
+
+      .itemRight {
+        width: 30%;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .buttonContian {
+          text-align: center;
+          .button-color {
+           /* background: #0088ee;*/
+          }
+        }
+
+        .textED {
+          text-align: center;
+          color: #0088ee;
+          text-decoration: underline;
+          padding-top: 2px;
+        }
+      }
+    }
+  }
+}
