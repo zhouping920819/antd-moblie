@@ -13,7 +13,7 @@ class Home extends React.Component {
     return (
       <div>
         <Header header={<FormattedMessage id="app.home.title" />} showBack showMore />
-        <Swiper/>
+      {/*  <Swiper/>*/}
         <Grider/>
         <Content/>
       </div>

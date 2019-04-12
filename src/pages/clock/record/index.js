@@ -21,7 +21,7 @@ import './index.less'
 class ClockRecord extends React.Component {
   constructor(props) {
     super(props)
-
+    console.log('props====='+props)
     const dataSource = new ListView.DataSource({
       getRowData: this.getRowData,
       getSectionHeaderData: this.getSectionData,
