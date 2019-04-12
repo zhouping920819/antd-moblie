@@ -6,7 +6,7 @@ class Swiper extends React.Component {
     state = {
         data: ['1', '2', '3'],
         imgHeight: 176,
-        flag:false
+        flag: false,
     }
 
     componentDidMount() {
@@ -21,11 +21,10 @@ class Swiper extends React.Component {
     }
     render () {
         return (
-            <div className="main-swiper">
+            <div className="main-carousel">
                 <WingBlank>
                     <Carousel
-                        ref=""
-                        autoplay={false}
+                        autoplay={this.state.flag}
                         infinite
                         beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
                         afterChange={index => console.log('slide to', index)}
@@ -33,7 +32,7 @@ class Swiper extends React.Component {
                         {this.state.data.map(val => (
                             <a
                                 key={val}
-                                href="http://www.alipay.com"
+                                href= "http://www.baidu.com"
                                 style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
                             >
                                 <img
@@ -44,6 +43,7 @@ class Swiper extends React.Component {
                                         // fire window resize event to change height
                                         window.dispatchEvent(new Event('resize'));
                                         this.setState({ imgHeight: 'auto' });
+                                       // imgHeight: this.state.imageHeight
                                     }}
                                 />
                             </a>

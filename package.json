@@ -4,8 +4,8 @@
   "description": "antd-mobile",
   "main": "src/index.js",
   "scripts": {
-    "start": "node server.js",
-    "build": "webpack --config config/webpack.config.js"
+    "start": "webpack-dev-server --progress --config config/webpack.dev.js --open",
+    "build": "webpack --config config/webpack.prod.js"
   },
   "author": "zhouping940106sina@.cn",
   "license": "MIT",

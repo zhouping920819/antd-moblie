@@ -6,9 +6,8 @@ import {
     Swiper,
     Grider,
     Content,
-    Footer
+   // Foot
 } from 'commons'
-//import { Footer } from './commons';
 class Home extends React.Component {
   render() {
     return (
@@ -17,7 +16,6 @@ class Home extends React.Component {
         <Swiper/>
         <Grider/>
         <Content/>
-        <Footer/>
       </div>
     )
   }
