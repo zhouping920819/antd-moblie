@@ -42,6 +42,7 @@ const render = () => {
   )
 }
 
+
 render()
 
 // Hot reloading
