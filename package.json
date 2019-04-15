@@ -4,6 +4,7 @@
   "description": "antd-mobile",
   "main": "src/index.js",
   "scripts": {
+    "prestart": "node config/down.js",
     "start": "webpack-dev-server --progress --config config/webpack.dev.js --open",
     "build": "webpack --config config/webpack.prod.js"
   },
@@ -38,13 +39,14 @@
     "webpack-hot-middleware": "^2.24.3"
   },
   "dependencies": {
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
     "antd-mobile": "^2.2.11",
     "connected-react-router": "^6.0.0",
     "history": "^4.7.2",
     "immutable": "^4.0.0-rc.12",
+    "jsdom": "^14.0.0",
     "prop-types": "^15.6.2",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
     "react-intl": "^2.8.0",
     "react-redux": "^6.0.0",
     "react-router": "^4.3.1",
