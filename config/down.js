@@ -6,7 +6,7 @@ const jsdom = require('jsdom')
 const { JSDOM } =  jsdom ;
 
 
-let getJuejinUrl = 'https://zhidao.baidu.com/question/572726347.html'
+let getJuejinUrl = 'http://www.jiuyaocha.cn/idcard/id_652325.html'
 let http= url.parse(getJuejinUrl)['protocol'].includes('https') ? require('https'): require('http')
 let option = url.parse(getJuejinUrl)
 
@@ -29,13 +29,12 @@ function getData (argreUrl,success=null) {
     })
 }
 getData(getJuejinUrl,success)
-debugger
 
 function success (html) {
     console.log('html===='+html)
     const dom = new JSDOM(`${html}`)
     const document = dom.window.document
-    let targetDom = document.querySelectorAll('.table-hover')
+    let targetDom = document.querySelectorAll('.mcon')
     if (targetDom.length) {
         targetDom = targetDom[0]
     } else
@@ -50,8 +49,9 @@ function success (html) {
         obj.id = list[1].textContent
         jsonStr.push(obj)
     });
-    fs.writeFile(path.join(__filename, '../../src/utils/getDownload.js'),
-        `export const getDownload = ${JSON.stringify(jsonStr)}`,
+    //console.log('jsonStr======='+jsonStr)
+    fs.writeFile(path.join(__filename, '../../src/utils/getDownload.html'),
+        `export const getDownload =  ${JSON.stringify(jsonStr)}`,
         'utf8',
         (err) => {
             if (err) throw err;

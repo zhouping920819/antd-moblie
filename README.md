@@ -769,6 +769,21 @@ render() {
 
 ## isMounted
 
+
+##
+    增加node网页爬虫
+
+    1 npm script 
+         start: 执行 npm start
+         test: 执行 npm test
+         stop: 执行 npm stop
+         restart: 执行 npm restart。npm restart是一个复合命令，
+            实际上会依次执行三个脚本命令：stop、restart、start。
+            prerestart>prestop>stop>poststop>restart>prestart>start>poststart>postrestart
+
+    2 根据配置在script 里 新增里config/down.js
+    
+
 - 不要再使用 `isMounted`. eslint: [`react/no-is-mounted`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-is-mounted.md)
 
 > 为什么? [`isMounted` 反人类设计模式:()][anti-pattern], 在 ES6 classes 中无法使用， 官方将在未来的版本里删除此方法.
@@ -776,3 +791,7 @@ render() {
 [anti-pattern]: https://facebook.github.io/react/blog/2015/12/16/ismounted-antipattern.html
 
 **[⬆ 回到顶部](#内容目录)**
+
+
+
+
