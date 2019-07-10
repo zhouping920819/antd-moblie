@@ -15,14 +15,16 @@ const routes = (
     <Route exact path="/" component={Home} />
     <Route
       path="/counter"
+      exact
       component={AsyncComponentTools.getAsyncComponent(() =>
-        import(/* webpackChunkName: 'counter' */ '../pages/counter')
+        import('../pages/counter')
       )}
     />
     <Route
       path="/clockRecord"
+      exact
       component={AsyncComponentTools.getAsyncComponent(() =>
-        import(/* webpackChunkName: 'clockRecord' */ '../pages/clock/record')
+        import( '../pages/clock/record')
       )}
     />
     <Route component={NoMatch} />

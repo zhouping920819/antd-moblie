@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "antd-mobile",
   "main": "src/index.js",
+  "homepage": "./",
   "scripts": {
-    "prestart": "node config/down.js",
     "start": "webpack-dev-server --progress --config config/webpack.dev.js --open",
     "build": "webpack --config config/webpack.prod.js"
   },
@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "antd-mobile": "^2.2.11",
+    "babel-preset-es2015": "^6.24.1",
     "connected-react-router": "^6.0.0",
     "history": "^4.7.2",
     "immutable": "^4.0.0-rc.12",

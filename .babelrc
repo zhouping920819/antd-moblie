@@ -6,7 +6,8 @@
         "useBuiltIns": false
       }
     ],
-    "@babel/preset-react"
+    "@babel/preset-react",
+   // "es2015"
   ],
   "plugins": [
     ["@babel/plugin-proposal-decorators", { "legacy": true }],
