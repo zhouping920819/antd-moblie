@@ -16,8 +16,8 @@ module.exports = {
     host: '0.0.0.0',
     port: 8088,
     open: true,
-    compress: true, // 开启gizp 模式 
-    hot: true,
+    compress: true, // 开启gizp 模式
+    hot: false,
     clientLogLevel: 'warning', // 能隐藏热更替 控制台的进度
     historyApiFallback: true,
     overlay: {
